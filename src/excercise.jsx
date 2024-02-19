@@ -1,13 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+const Hello = (props) => {
+  const year = 2024
+	return <h1>HELLO {props.name} {props.age} du är född: {year-props.age}</h1>
+};
+
+const Member = (props) => {
+  return <li>
+    {props.name}
+  </li>
+}
+
+
+const BackstreetBoys = () => {
+  return <ul>
+     <Member name="Nick <3" />
+            <Member name="AJ <3" />
+            <Member name="Kevin <3" />
+            <Member name="Brian <3" />
+  </ul>
+}
+
 
 function App() {
-	const Hello = () => {
-		<>
-			<h1>Iréne</h1>
-		</>;
-	};
-
 	/* 1. Gör en komponent Hello som säger ert namn */
 
 	/* 2. Gör så att Hello komponenten tar emot namn och ålder i props och 
@@ -32,7 +47,10 @@ function App() {
             <Member name="Brian <3" />
          </ul>
   */
-	return <></>;
+	return <>
+  <Hello name="Irene" age={43}/>
+  <BackstreetBoys/>
+  </>;
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
