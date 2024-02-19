@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+
+
 const Hello = (props) => {
   const year = 2024
 	return <h1>HELLO {props.name} {props.age} du är född: {year-props.age}</h1>
