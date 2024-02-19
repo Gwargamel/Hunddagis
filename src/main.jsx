@@ -12,9 +12,10 @@ const Content = (props) => {
 	return (
 		<ul>
 			<Spice name="Kanel" description="Julkrydda" price={1} weight={50}/>
-			<Spice name="Curry" description="Indisk krydda" price={2} weight={50}/>
+			<Spice name="Curry" description="Indisk kryddaaaa" price={2} weight={50}/>
 		</ul>
 	);
+
 };
 
 
