@@ -18,6 +18,7 @@ const Content = (props) => {
 
 };
 
+//JJJ
 
 // const Price = (props) => {
 // 	const {price, weight} = props
